@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn Form</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+
+        }
+         form{
+            margin-top: 30px;
+            width: 400px;
+            border: 2px solid black;
+            background: rgb(240, 238, 238);
+            padding: 10px;
+            border-radius: 10px;
+           
+        }
+        select{
+            width: 100%;
+            padding: 5px;
+        }
+       
+        form input{
+            padding: 4px;
+            border-radius: 5px;
+              
+        } 
+        form input{
+            margin-bottom: 10px;
+        }
+
+        #submitBtn{
+            background: rgb(5, 207, 5);
+            color: white;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: none;
+            font-weight: 700;
+            border-radius: 5px;
+        }
+
+        #province{
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div >
+        <h2 style="text-align: center;">LogIn Form For Short Course</h2>
+    <form action="">
+        <div>
+            <label for="fullname">Name</label>
+            <input type="text" style="width: 100%;" name="fullname" id="fname">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" style="width: 100%;" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" style="width: 100%;" name="password" id="password" required>
+        </div>
+    
+        <div>
+            <h2 style="font-size: 18px; margin-bottom: 10px;" >Gender</h2>
+            <input type="radio" name="gender" value="male" id="male" required>
+            <label for="gender" style="margin-right: 10px;">Male</label>
+            <input type="radio"  name="gender" value="female" id="female" required>
+            <label for="gender">Female</label>
+        </div>
+        <div>
+            <h2 style="font-size: 18px; margin: 10px 0px;">Courses</h2>
+            <input type="checkbox" name="course" value="web" id="courses1"  required>
+            <label for="web" style="margin-right: 10px;">Web Development</label>
+            <input type="checkbox" name="course" value="AI" id="courses2" required>
+            <label for="ai" style="margin-right: 10px;">AI</label>
+            <input type="checkbox" name="course" value="cyber security" id="courses3" required>
+            <label for="cyber security">Cyber Security</label>
+        </div>
+
+        <div>
+            <label for="province" style="display: block; margin-bottom: 8px;">Province</label>
+            <select name="province" id="province">
+                <option selected >---Select your Province---</option>
+                <option value="punjab">Punjab</option>
+                <option value="pakhtunkhwa">Pakhtunkhwa</option>
+                <option value="sindh">Sindh</option>
+                <option value="balochistan">Balochistan</option>
+
+            </select>
+        </div>
+        <div>
+            <label for="dateOfBirth" style="display: block; margin-bottom: 5px;">Date Of Birth</label>
+            <input type="date" name="dob" id="dateOfBirth" required>
+        </div>
+        <div>
+            <button type="submit" name="submit" id="submitBtn">Register</button>
+           
+        </div>
+         
+    </form>
+    </div>
+    
+    <script src="form.js"></script>
+</body>
+</html>
