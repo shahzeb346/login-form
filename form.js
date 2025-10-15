@@ -26,10 +26,11 @@ const data = {
     province: province,
     dob : dob,
 }
-
+ form.reset();
 console.log(data);
 
 }
 form.addEventListener("submit", (evt) =>{
     FormHandle(evt);
 });
+
